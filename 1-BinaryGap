@@ -1,0 +1,6 @@
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+
+def solution(N):
+    return max([len(x) for x in "{0:b}".format(N).rstrip('0').lstrip('0').split('1')])
+    
