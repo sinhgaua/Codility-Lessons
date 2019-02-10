@@ -1,0 +1,10 @@
+def solution(A):
+    head = A[0]
+    tail = sum(A[1:])
+    diff = abs(head-tail)
+    for n in range(1,len(A)-1):
+        head = head + A[n]
+        tail = tail - A[n]
+        if diff > abs(head-tail):
+            diff = abs(head-tail)
+    return diff     
