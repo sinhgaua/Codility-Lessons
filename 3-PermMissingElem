@@ -1,0 +1,7 @@
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+
+def solution(A):
+    n = len(A)
+    sumOfAll = int(((n+1)*(n+2))/2)
+    return (sumOfAll - sum(A))
