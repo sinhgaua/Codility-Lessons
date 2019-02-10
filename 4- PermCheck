@@ -1,0 +1,9 @@
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+
+def solution(A):
+    n = len(A)
+    return int(sum(A) == n*(n+1)/2 and len(set(A)) ==len(A))
