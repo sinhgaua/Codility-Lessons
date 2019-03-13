@@ -1,7 +1,11 @@
-# you can write to stdout for debugging purposes, e.g.
-# print("this is a debug message")
-import math
-def solution(X, Y, D):
-    distance = Y-X
-    return math.ceil(distance/D)
+def solution(X, A):
+    ready = [False]*X
+    match = X
+    for i in range(len(A)):
+        if ready[A[i]-1]==False:
+            ready[A[i]-1] = True
+            match = match -1
+            if match ==0:
+                return i
+    return -1
     
